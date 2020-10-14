@@ -255,7 +255,7 @@ c) Install python requirements
 pip install -r requirements.txt
 ```
 
-d) Register `[connection_string]`. If you don't know how to get it, please contact Inoue or Shamik.
+d) Get `[connection_string]` from [Azure Blob Storage](https://portal.azure.com/#@nablascom.onmicrosoft.com/resource/subscriptions/75ed811e-fd15-43a7-8e72-8d60f317046d/resourceGroups/somic/providers/Microsoft.Storage/storageAccounts/somicdataset/overview) (`Settings` -> `Access keys` -> `Connection string`), and register it with the following command. If you have some trouble, please contact Inoue or Shamik.
 ```
 dvc remote modify --local somic-data connection_string "[connection_string]"
 ```
