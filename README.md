@@ -239,7 +239,7 @@ dataset:
 
 <br>
 
-## 5. Prepare v1.0.0 Dataset in Your Machine
+## 5. Prepare v1.1.0 Dataset in Your Machine
 
 a) Start docker container from `PyTorch+CUDA` image on JupyterHub
 
@@ -247,7 +247,7 @@ b) Download this repository
 ```
 git clone git@github.com:nablas-inc/somic-data.git
 cd somic-data
-git checkout v1.0.0
+git checkout v1.1.0
 ```
 
 c) Install python requirements
@@ -255,7 +255,7 @@ c) Install python requirements
 pip install -r requirements.txt
 ```
 
-d) Register `[connection_string]`. If you don't know how to get it, please contact Inoue or Shamik.
+d) Get `[connection_string]` from [Azure Blob Storage](https://portal.azure.com/#@nablascom.onmicrosoft.com/resource/subscriptions/75ed811e-fd15-43a7-8e72-8d60f317046d/resourceGroups/somic/providers/Microsoft.Storage/storageAccounts/somicdataset/overview) (`Settings` -> `Access keys` -> `Connection string`), and register it with the following command. If you have some trouble, please contact Inoue or Shamik.
 ```
 dvc remote modify --local somic-data connection_string "[connection_string]"
 ```
