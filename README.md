@@ -239,7 +239,7 @@ dataset:
 
 <br>
 
-## 5. Prepare v1.1.0 Dataset in Your Machine
+## 5. Prepare v1.2.0 Dataset in Your Machine
 
 a) Start docker container from `PyTorch+CUDA` image on JupyterHub
 
@@ -247,7 +247,7 @@ b) Download this repository
 ```
 git clone git@github.com:nablas-inc/somic-data.git
 cd somic-data
-git checkout v1.1.0
+git checkout v1.2.0
 ```
 
 c) Install python requirements
